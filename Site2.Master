@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="WillProject2019.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        #main{width:auto;height:auto;padding:0px;margin:0px;}
+        #header{width:auto;height:100px;background-color:#751516;}
+        #header a{color:white;}
+        #back{width:11%;float:right;margin-top:3%;}
+        #image{width:78%;margin-left:8%;float:right;}
+        #header img {width:100%;height:100px;}
+        #body{width:100%;height:537px;
+float:right;float:left;background:transparent url(blur.jpg) no-repeat center center;
+        }
+        
+        #menu {
+            width: 50%;
+            height:427px;
+            margin-top: 100px;
+            margin-left: 43%;
+           
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main">
+            
+            <div id="header">
+                <div id="back">
+                    
+                         <asp:HyperLink ID="HyperLink1" runat="server" EnableViewState="False" NavigateUrl="~/login.aspx" Visible="False">Back</asp:HyperLink>
+                
+            
+                   </div>
+                <div id="image">
+                   <img src="main1.jpg" >
+                    </div>
+                </div>
+             <div id="body">
+                 
+                 
+                 <div id="menu">
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>   
+            
+                     </div>
+        </div>
+            </div>
+    </form>
+</body>
+</html>
